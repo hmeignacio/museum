@@ -12,7 +12,9 @@ import {
   Group,
   Badge,
   ThemeIcon,
-  rem
+  rem,
+  Modal,
+  Button
 } from "@mantine/core";
 import { Carousel, CarouselSlide } from "@mantine/carousel";
 import "../App.css";
@@ -23,6 +25,23 @@ import present from "../img/present1.png";
 import future from "../img/future1.png";
 import ReactPlayer from "react-player/lazy";
 import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
+import { useDisclosure } from "@mantine/hooks";
+
+function ModalText({title, description}){
+  const [opened, {open, close}] = useDisclosure(false);
+  return(
+    <>
+      <Modal opened={opened} onClose={close} title={title}>
+        <Text>{description}</Text>
+      </Modal>
+
+      <Button color="rgba(179, 0, 0, 1)" radius="xl" onClick={open}>Read more...</Button>
+    </>
+  )
+}
+
+
+
 function LandingPage() {
   return (
     <>
@@ -53,28 +72,19 @@ function LandingPage() {
                   <Card
                     shadow="lg"
                     padding="xl"
-                    component="a"
-                    href="https://www.artsteps.com/view/673422d64d1a5c9a4cc569c5"
-                    target="_blank"
                     h={600}
                     radius={"md"}
                     bg={"black"}
                   >
                     <Card.Section>
-                      <Image src={past} h={250} alt="past" />
+                      <Image src={past} h={425} alt="past"/>
                     </Card.Section>
 
                     <Group justify="space-between" mt="md" mb="xs">
-                      <Text fw={700} size="lg" mt="md" c={"white"}>
-                        Past
-                      </Text>
-                      <Badge color="rgba(179, 0, 0, 1)">
-                        go to virtual showroom
-                      </Badge>
-                    </Group>
 
-                    <Text mt="xs" c="white" size="sm">
-                      The 2000-2010 era greatly changed the social lives of
+                      <ModalText 
+                      title="Past" 
+                      description=" The 2000-2010 era greatly changed the social lives of
                       Filipinos. Social media beauty trends inspired people to
                       try new looks and connect with others who had similar
                       interests, promoting self-expression. Reality TV brought
@@ -86,7 +96,15 @@ function LandingPage() {
                       helping people stay in touch and share their lives.
                       Overall, these trends reshaped how Filipinos interacted,
                       blending digital and in-person connections in vibrant new
-                      ways.
+                      ways."/>
+                      <Badge color="rgba(179, 0, 0, 1)" component="a" href="https://www.artsteps.com/view/673422d64d1a5c9a4cc569c5"
+                    target="_blank">
+                        go to virtual showroom
+                      </Badge>
+                    </Group>
+
+                    <Text mt="xs" c="white" size="sm">
+                     
                     </Text>
                   </Card>
                 </Carousel.Slide>
@@ -95,28 +113,19 @@ function LandingPage() {
                   <Card
                     shadow="lg"
                     padding="xl"
-                    component="a"
-                    href="https://www.artsteps.com/view/6735a618596368d27255305e"
-                    target="_blank"
-                    h={600}
+                    h={700}
                     radius={"md"}
                     bg={"black"}
                   >
                     <Card.Section>
-                      <Image src={present} h={250} alt="No way!" />
+                      <Image src={present} h={425} alt="No way!" />
                     </Card.Section>
 
                     <Group justify="space-between" mt="md" mb="xs">
-                      <Text fw={700} size="lg" mt="md" c={"white"}>
-                        Present
-                      </Text>
-                      <Badge color="rgba(179, 0, 0, 1)">
-                        go to virtual showroom
-                      </Badge>
-                    </Group>
 
-                    <Text mt="xs" c="white" size="xs">
-                      In this present time, social media has really changed how
+                      <ModalText 
+                      title="Present" 
+                      description=" In this present time, social media has really changed how
                       we socialize in the Philippines today. The makeup scene is
                       booming, with people sharing their routines and
                       transformations online, creating a strong community
@@ -131,48 +140,52 @@ function LandingPage() {
                       conclude with, these changes have built a lively,
                       connected community where we can express ourselves, share
                       our experiences, and influence each other across the
-                      world.
-                    </Text>
+                      world."/>
+                      <Badge color="rgba(179, 0, 0, 1)" component="a" href="https://www.artsteps.com/view/673422d64d1a5c9a4cc569c5"
+                    target="_blank">
+                        go to virtual showroom
+                      </Badge>
+                    </Group>
                   </Card>
                 </Carousel.Slide>
 
                 <Carousel.Slide>
-                  <Card
-                    shadow="sm"
+                <Card
+                    shadow="lg"
                     padding="xl"
-                    component="a"
-                    href="https://www.artsteps.com/view/6735a66475b090e14b92e764"
-                    target="_blank"
-                    h={600}
+                    h={700}
                     radius={"md"}
                     bg={"black"}
                   >
                     <Card.Section>
-                      <Image src={future} h={250} alt="No way!" />
+                      <Image src={future} h={425} alt="No way!" />
                     </Card.Section>
 
                     <Group justify="space-between" mt="md" mb="xs">
-                      <Text fw={700} size="lg" mt="md" c={"white"}>
-                        Future
-                      </Text>
-                      <Badge color="rgba(179, 0, 0, 1)">
+
+                      <ModalText 
+                      title="Future" 
+                      description=" In this present time, social media has really changed how
+                      we socialize in the Philippines today. The makeup scene is
+                      booming, with people sharing their routines and
+                      transformations online, creating a strong community
+                      through hashtags. Unlike before, when we just watched
+                      videos, we now actively discuss and react to content on
+                      platforms like TikTok and Instagram. Performance culture
+                      has shifted from local events to global platforms,
+                      allowing anyone to showcase their talents and even make a
+                      career out of it. Plus, communication has evolved, with
+                      social media providing more interactive ways to connect,
+                      like video calls and stories, instead of just texting. To
+                      conclude with, these changes have built a lively,
+                      connected community where we can express ourselves, share
+                      our experiences, and influence each other across the
+                      world."/>
+                      <Badge color="rgba(179, 0, 0, 1)" component="a" href="https://www.artsteps.com/view/673422d64d1a5c9a4cc569c5"
+                    target="_blank">
                         go to virtual showroom
                       </Badge>
                     </Group>
-
-                    <Text mt="xs" c="white" size="sm">
-                      By 2030, Filipino social life has become more connected
-                      and immersive. People can use social media and holograms
-                      to interact as if they’re face-to-face, no matter the
-                      distance. Beauty and performance trends reach a global
-                      audience, letting Filipinos connect with others around the
-                      world. VR karaoke, virtual talent shows, and interactive
-                      livestreams make self-expression fun and engaging, while
-                      AI helps people find communities with similar interests.
-                      This blend of digital and real-life interactions has
-                      created a closer, more expressive Filipino society, where
-                      connecting and sharing is easier than ever.
-                    </Text>
                   </Card>
                 </Carousel.Slide>
               </Carousel>
