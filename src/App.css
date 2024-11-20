@@ -174,3 +174,23 @@ p {
 .missionTitles{
   font-family: "Noto Sans", sans-serif !important;
 }
+
+
+.listItems{
+  font-family: Poppins, "sans-serif" !important;
+}
+
+.featureTitle{
+  font-family: Britanny !important;
+  font-size: 4rem !important;
+}
+
+.contribute{
+  font-family: Britanny !important;
+  font-size: 3rem !important;
+}
+
+@font-face {
+  font-family: 'Britanny';
+  src: url('../src/fonts/BrittanySignature.ttf') format('truetype');
+}

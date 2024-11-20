@@ -33,8 +33,8 @@ function Navbarpage() {
             <Grid.Col span={{base: 12, sm: 12, md: 1.25, lg: 1.25, xl: 1.25}}>
               {" "}
               <NavLink
-                href="#contributors"
-                label="Contributors"
+                href="#about"
+                label="About Us"
                 leftSection={<IconHome2 size="1rem" stroke={1.5} />}
               />
             </Grid.Col>
