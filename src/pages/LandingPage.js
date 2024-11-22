@@ -342,7 +342,7 @@ function LandingPage() {
                 radius="md"
                 h={420}
                 w={700}
-                className="imageLand"
+                className="imageContributors"
               />
             </Grid.Col>
 

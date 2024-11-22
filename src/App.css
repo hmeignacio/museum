@@ -202,6 +202,10 @@ p {
   .imageFeature{
     height: auto !important;
   }
+  .imageContributors{
+    height: 450px !important;
+    width: 100% !important; 
+  }
 }
 
 @media (max-width: 1020px) {
@@ -273,7 +277,10 @@ p {
     height: 200px!important;
     width: 400px !important;
   }
-  
+  .imageContributors{
+    height: 200px!important;
+    width: 400px !important; 
+  }
 }
 
 /* For devices with a max-width of 768px (tablets and below) */
@@ -342,6 +349,10 @@ p {
   .imageFeature{
     height: 200px!important;
     width: 400px !important;
+  }
+  .imageContributors{
+    height: 200px!important;
+    width: 400px !important; 
   }
 
   .objectives{
