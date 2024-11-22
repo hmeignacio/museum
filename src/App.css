@@ -172,7 +172,7 @@ p {
 
   /* Adjust spacing in lists and other components */
   .listItems {
-    font-size: 10px !important; /* Decrease font size for list items */
+    font-size: 12px !important; /* Decrease font size for list items */
     padding-left: 20px !important; /* Ensure proper indentation for list items */
   }
 
@@ -230,7 +230,7 @@ p {
 
   /* Adjust spacing in lists and other components */
   .listItems {
-    font-size: 10px !important; /* Decrease font size for list items */
+    font-size: 12px !important; /* Decrease font size for list items */
     padding-left: 20px !important; /* Ensure proper indentation for list items */
   }
 
