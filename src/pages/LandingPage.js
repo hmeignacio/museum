@@ -200,11 +200,12 @@ function LandingPage() {
 
         <Paper mt={"xl"} mb={"xl"} px={"xl"}id="features">
           <Grid>
-            <Grid.Col span={{ base: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
+            <Grid.Col span={{ base: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
               <Carousel
-                slideSize={{ base: '100%', sm: '50%', md: '33.333333%', xl:'100%' }}
-                height={475}
-                slideGap="sm"
+                slideSize="100%"
+                height={450}
+                w={'auto'}
+                slideGap="xl"
                 controlsOffset="xl"
                 dragFree
                 withIndicators
@@ -215,7 +216,7 @@ function LandingPage() {
                 <CarouselSlide>
                   <Card
                     padding="xl"
-                    h={450}
+                    h={475}
                     radius={"md"}
                     bg={"black"}
                   >
@@ -223,7 +224,7 @@ function LandingPage() {
                       <Image
                         src={adaptive}
                         radius="md"
-                        h={450}
+                        h={475}
                         w={"100%"}
                         className="imageFeature"
                       />
@@ -234,7 +235,7 @@ function LandingPage() {
                   <Card
 
                     padding="xl"
-                    h={450}
+                    h={475}
                     radius={"md"}
                     bg={"black"}
                   >
@@ -242,7 +243,7 @@ function LandingPage() {
                       <Image
                         src={dynamic}
                         radius="md"
-                        h={450}
+                        h={475}
                         w={"100%"}
                         className="imageFeature"
                       />
@@ -252,7 +253,7 @@ function LandingPage() {
                 <CarouselSlide>
                   <Card
                     padding="xl"
-                    h={450}
+                    h={475}
                     radius={"md"}
                     bg={"black"}
                   >
@@ -260,7 +261,7 @@ function LandingPage() {
                       <Image
                         src={immersive}
                         radius="md"
-                        h={450}
+                        h={475}
                         w={"100%"}
                         className="imageFeature"
                       />
@@ -269,7 +270,7 @@ function LandingPage() {
                 </CarouselSlide>
               </Carousel>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, sm: 12, md: 5, lg: 5, xl: 5 }}>
+            <Grid.Col span={{ base: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
               <Paper px={"md"}>
                 <Title className="featureTitle">Features</Title>
                 <Space h={"md"} />
@@ -357,7 +358,7 @@ function LandingPage() {
                   height={400}
                   slideGap="sm"
                   controlsOffset="xl"
-                  slideSize={{ base: '100%', sm: '50%', md: '33.333333%', xl:'100%' }}
+                  slideSize="100%"
                   dragFree
                   withIndicators
                   align={"center"}
