@@ -208,7 +208,7 @@ p {
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1020px){
   .imageLand {
     width: 100% !important;   /* Force the image to be 100% of its container */
     height: fit-content !important;  /* Maintain the aspect ratio */
@@ -345,6 +345,7 @@ p {
   .carouselGoals{
     height: 200px !important;
     margin: auto !important;
+    width: auto !important;
   }
   .imageFeature{
     height: 200px!important;

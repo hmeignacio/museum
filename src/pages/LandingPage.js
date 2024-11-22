@@ -202,7 +202,7 @@ function LandingPage() {
           <Grid>
             <Grid.Col span={{ base: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
               <Carousel
-                slideSize="100%"
+                slideSize={{ base: '100%', sm: '50%', md: '33.333333%', xl:'100%' }}
                 height={475}
                 slideGap="sm"
                 controlsOffset="xl"
@@ -351,11 +351,13 @@ function LandingPage() {
               px={"sm"}
             >
               <Paper padding="sm">
+              <Title className="contribute">About Trend Hub</Title>
+              <Space h={"md"} />
                 <Carousel
-                  slideSize="100%"
                   height={400}
                   slideGap="sm"
                   controlsOffset="xl"
+                  slideSize={{ base: '100%', sm: '50%', md: '33.333333%', xl:'100%' }}
                   dragFree
                   withIndicators
                   align={"center"}
