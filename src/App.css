@@ -199,6 +199,9 @@ p {
   .objectives{
     margin-top: 30px !important;
   }
+  .imageFeature{
+    height: auto !important;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -257,6 +260,19 @@ p {
   .objectives{
     margin-top: 30px !important;
   }
+  .carouselFeature{
+    height: 200px !important;
+    margin-bottom: auto !important;
+  }
+
+  .carouselGoals{
+    height: 200px !important;
+    margin: auto !important;
+  }
+  .imageFeature{
+    height: 200px!important;
+    width: 400px !important;
+  }
   
 }
 
@@ -265,7 +281,7 @@ p {
   /* Ensure images scale correctly */
   .imageLand {
     width: 100% !important;   /* Force the image to be 100% of its container */
-    height: fit-content !important;  /* Maintain the aspect ratio */
+    height: 100% !important;  /* Maintain the aspect ratio */
   }
 
   /* Adjust paper margin for better spacing on mobile */
@@ -315,8 +331,17 @@ p {
   }
 
   .carouselFeature{
-    height: 300px !important;
+    height: 200px !important;
     margin-bottom: auto !important;
+  }
+
+  .carouselGoals{
+    height: 200px !important;
+    margin: auto !important;
+  }
+  .imageFeature{
+    height: 200px!important;
+    width: 400px !important;
   }
 
   .objectives{

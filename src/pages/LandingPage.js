@@ -53,7 +53,7 @@ function LandingPage() {
   return (
     <>
       <Container fluid mt={"md"}>
-        <Paper m={"xl"} className="paperLanding">
+        <Paper m={"xl"} px={"xl"}className="paperLanding">
           <Grid>
             <Grid.Col span={{ base: 12, sm: 12, md: 5, lg: 5, xl: 5 }}>
               <Image
@@ -198,7 +198,7 @@ function LandingPage() {
           <Space h={"xl"} />
         </Paper>
 
-        <Paper mt={"xl"} mb={"xl"} id="features">
+        <Paper mt={"xl"} mb={"xl"} px={"xl"}id="features">
           <Grid>
             <Grid.Col span={{ base: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
               <Carousel
@@ -225,7 +225,7 @@ function LandingPage() {
                         radius="md"
                         h={450}
                         w={"100%"}
-                        className="imageLand"
+                        className="imageFeature"
                       />
                     </Card.Section>
                   </Card>
@@ -244,7 +244,7 @@ function LandingPage() {
                         radius="md"
                         h={450}
                         w={"100%"}
-                        className="imageLand"
+                        className="imageFeature"
                       />
                     </Card.Section>
                   </Card>
@@ -262,7 +262,7 @@ function LandingPage() {
                         radius="md"
                         h={450}
                         w={"100%"}
-                        className="imageLand"
+                        className="imageFeature"
                       />
                     </Card.Section>
                   </Card>
@@ -329,7 +329,7 @@ function LandingPage() {
           <Space h={"xl"} />
         </Paper>
 
-        <Paper mt={"xl"} mb={"xl"} id="about" className="objectives">
+        <Paper mt={"xl"} mb={"xl"} px={'xl'} id="about" className="objectives">
           <Grid>
             <Grid.Col
               span={{ base: 12, sm: 12, md: 6, lg: 6, xl: 6 }}
@@ -360,6 +360,7 @@ function LandingPage() {
                   withIndicators
                   align={"center"}
                   controlSize={50}
+                  className="carouselGoals"
                 >
                   <CarouselSlide>
                   <Card
@@ -369,7 +370,7 @@ function LandingPage() {
                     bg={"black"}
                   >
                   <Card.Section>
-                  <Image src={mission} radius="md" h={450} w={"100%"} className="imageLand"/>
+                  <Image src={mission} radius="md" h={450} w={"100%"} className="imageFeature"/>
                   </Card.Section>
                   
                   </Card>
@@ -382,7 +383,7 @@ function LandingPage() {
                     bg={"black"}
                   >
                   <Card.Section>
-                  <Image src={vision} radius="md" h={450} w={"100%"} className="imageLand"/>
+                  <Image src={vision} radius="md" h={450} w={"100%"} className="imageFeature"/>
                   </Card.Section>
                   
                   </Card>
@@ -395,7 +396,7 @@ function LandingPage() {
                     bg={"black"}
                   >
                   <Card.Section>
-                  <Image src={goals} radius="md" h={450} w={"100%"} className="imageLand"/>
+                  <Image src={goals} radius="md" h={450} w={"100%"} className="imageFeature"/>
                   </Card.Section>
                   
                   </Card>
