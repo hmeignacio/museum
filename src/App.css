@@ -174,7 +174,6 @@ p {
   .listItems {
     font-size: 12px !important; /* Decrease font size for list items */
     padding-left: 20px !important; /* Ensure proper indentation for list items */
-    margin-top: 40% !important;
   }
 
   /* Adjust the badge size for better mobile visibility */
