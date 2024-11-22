@@ -271,7 +271,7 @@ function LandingPage() {
               </Carousel>
             </Grid.Col>
             <Grid.Col span={{ base: 12, sm: 12, md: 6, lg: 6, xl: 6 }}>
-              <Paper px={"md"}>
+              <Paper px={"md"} mt={'xl'}  classNames="featuresTitle">
                 <Title className="featureTitle">Features</Title>
                 <Space h={"md"} />
                 <List

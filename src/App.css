@@ -174,7 +174,7 @@ p {
   .listItems {
     font-size: 12px !important; /* Decrease font size for list items */
     padding-left: 20px !important; /* Ensure proper indentation for list items */
-    margin-top: 100% !important;
+    margin-top: 30% !important;
   }
 
   /* Adjust the badge size for better mobile visibility */
@@ -240,8 +240,9 @@ p {
   .listItems {
     font-size: 12px !important; /* Decrease font size for list items */
     padding-left: 20px !important; /* Ensure proper indentation for list items */
-    margin-top: 100% !important;
+    margin-top: 30% !important;
   }
+
 
   /* Adjust the badge size for better mobile visibility */
   .mantine-Badge {
@@ -280,7 +281,7 @@ p {
     width: 400px !important;
   }
   .imageContributors{
-    height: 200px!important;
+    height: 400px!important;
     width: 450px !important; 
   }
 }
@@ -325,7 +326,11 @@ p {
   .listItems {
     font-size: 14px !important; /* Decrease font size for list items */
     padding-left: 20px !important; /* Ensure proper indentation for list items */
-    margin-top: 100% !important;
+    margin-top: 30% !important;
+  }
+
+  .featuresTitle{
+    
   }
 
   /* Adjust the badge size for better mobile visibility */
