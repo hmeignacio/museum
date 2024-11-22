@@ -20,9 +20,9 @@ import { Carousel, CarouselSlide } from "@mantine/carousel";
 import "../App.css";
 import "@mantine/core/styles.css";
 import photo from "../img/welcome.svg";
-import adaptive from "../img/Adaptive_S2.svg";
-import dynamic from "../img/Dynamic_S2.svg";
-import immersive from "../img/Immersive_S2.svg";
+import adaptive from "../img/Adaptive.svg"
+import dynamic from "../img/Dynamic.svg"
+import immersive from "../img/Immersive_S2.png"
 import contributors from "../img/new - contributors.svg";
 import goals from "../img/Core Values_S3.svg";
 import mission from "../img/Mission_S3.png";
@@ -93,8 +93,9 @@ function LandingPage() {
                         component="a"
                         href="https://www.artsteps.com/view/673422d64d1a5c9a4cc569c5"
                         target="_blank"
+                        className="badgeShowroom"
                       >
-                        Go to virtual showroom
+                        Go to digital museum
                       </Badge>
                       <ModalText
                         title="Past"
@@ -133,7 +134,7 @@ function LandingPage() {
                         href="https://www.artsteps.com/view/6735a618596368d27255305e"
                         target="_blank"
                       >
-                        go to virtual showroom
+                        go to digital museum
                       </Badge>
 
                       <ModalText
@@ -171,7 +172,7 @@ function LandingPage() {
                         href="https://www.artsteps.com/view/6735a66475b090e14b92e764"
                         target="_blank"
                       >
-                        go to virtual showroom
+                        go to digital museum
                       </Badge>
                       <ModalText
                         title="Future"
@@ -191,12 +192,12 @@ function LandingPage() {
           <Space h={"xl"} />
         </Paper>
 
-        <Paper mt={"xl"} id="features" className="paperLanding">
+        <Paper mt={"xl"} mb={"xl"} id="features" className="paperLanding">
           <Grid>
             <Grid.Col span={{ base: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
               <Carousel
                 slideSize="100%"
-                height={600}
+                height={475}
                 slideGap="sm"
                 controlsOffset="xl"
                 dragFree
@@ -206,13 +207,13 @@ function LandingPage() {
                 className="carouselFeature"
               >
                 <CarouselSlide>
-                  <Image src={adaptive} radius="md" h={600} w={"100%"} className="imageLand"/>
+                  <Image src={adaptive} radius="md" h={450} w={"100%"} className="imageLand"/>
                 </CarouselSlide>
                 <CarouselSlide>
-                  <Image src={dynamic} radius="md" h={600} w={"100%"} className="imageLand"/>
+                  <Image src={dynamic} radius="md" h={450} w={"100%"} className="imageLand"/>
                 </CarouselSlide>
                 <CarouselSlide>
-                  <Image src={immersive} radius="md" h={600} w={"100%"} className="imageLand"/>
+                  <Image src={immersive} radius="md" h={450} w={"100%"} className="imageLand"/>
                 </CarouselSlide>
               </Carousel>
             </Grid.Col>
@@ -221,7 +222,7 @@ function LandingPage() {
                 <Title className="featureTitle">Features</Title>
                 <Space h={"md"} />
                 <List
-                  spacing="xl"
+                  spacing="md"
                   size="sm"
                   center
                   icon={
@@ -238,7 +239,7 @@ function LandingPage() {
                     through museum spaces.
                   </List.Item>
                   <List.Item>
-                    Clickable hotspots for additional insights on exhibits.
+                  {'       '}Clickable hotspots for additional insights on exhibits. {'       '}
                   </List.Item>
                   <List.Item>
                     Access detailed museum artifacts that users can zoom into,

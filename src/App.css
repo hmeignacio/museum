@@ -143,9 +143,64 @@ p {
 }
 /*end of navbar styling*/
 
+@media (min-width: 1024px) {
+  .imageLand {
+    width: 100% !important;   /* Force the image to be 100% of its container */
+    height: fit-content !important;  /* Maintain the aspect ratio */
+  }
+
+  /* Adjust paper margin for better spacing on mobile */
+
+  /* Hide carousel controls (arrows) on mobile for better UX */
+
+  /* Adjust carousel text size to be more readable on mobile */
+  .mantine-Text {
+    font-size: 14px !important; /* Adjust to a more readable font size */
+  }
+
+  /* Modify font size and padding for titles on mobile */
+  .mantine-Title {
+    font-size: 20px !important;   /* Make titles smaller on mobile */
+    padding: 0 10px !important;   /* Add padding to prevent clipping */
+  }
+
+  /* Ensure carousel items take full width on smaller screens */
+  .mantine-Carousel-slide {
+    width: 100% !important;
+    height: 100% !important;   /* Force slides to take full width */
+  }
+
+  /* Adjust spacing in lists and other components */
+  .listItems {
+    font-size: 10px !important; /* Decrease font size for list items */
+    padding-left: 20px !important; /* Ensure proper indentation for list items */
+  }
+
+  /* Adjust the badge size for better mobile visibility */
+  .mantine-Badge {
+    font-size: 12px !important;  /* Smaller text size for mobile badges */
+    padding: 5px 10px !important; /* Add some padding for better readability */
+  }
+
+  /* Make sure images within carousels also scale properly */
+  .mantine-Image {
+    width: 100% !important;
+    height: 100% !important;  /* Maintain the aspect ratio of carousel images */
+  }
+
+  .carouselFeature{
+    height: 425px !important;
+    margin-bottom: 20px !important;
+  }
+  .navContainer{
+    font-size: 5px !important;
+  }
+}
+
+
 
 /* For devices with a max-width of 768px (tablets and below) */
-@media (max-width: 768px) {
+@media (max-width: 768px), (min-width: 375px) {
   /* Ensure images scale correctly */
   .imageLand {
     width: 100% !important;   /* Force the image to be 100% of its container */
@@ -237,4 +292,10 @@ p {
 
 .description{
   font-family: Poppins, sans-serif;
+}
+
+.navLinks:hover{
+  background-color: gray;
+  color: black;
+  font-weight: 700;
 }
