@@ -192,7 +192,7 @@ function LandingPage() {
           <Space h={"xl"} />
         </Paper>
 
-        <Paper mt={"xl"} mb={"xl"} id="features" className="paperLanding">
+        <Paper mt={"xl"} mb={"xl"} id="features" >
           <Grid>
             <Grid.Col span={{ base: 12, sm: 12, md: 7, lg: 7, xl: 7 }}>
               <Carousel
@@ -270,6 +270,10 @@ function LandingPage() {
               </Paper>
             </Grid.Col>
           </Grid>
+        </Paper>
+
+        <Paper mb={"lg"}>
+          <Space h={"xl"}/>
         </Paper>
 
         <Paper mt={"xl"} mb={"xl"} id="about" className="objectives">
